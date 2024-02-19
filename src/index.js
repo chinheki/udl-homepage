@@ -1,9 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import TopBanner from "./pages/Homepage";
+import TopBanner from "./components/TopBanner";
 import { createHashRouter, RouterProvider, } from "react-router-dom";
-
 const router = createHashRouter([
   {
     path: "/",
