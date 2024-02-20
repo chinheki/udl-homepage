@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(jpe?g|png|gif)$/i,
+        test: /\.(jpe?g|png|gif|jfif)$/i,
         use: [
           {
             loader: "file-loader"
@@ -54,7 +55,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./public/index.html"
+    }),
+    new webpack.DefinePlugin({
+      'process.env.PUBLIC_URL': JSON.stringify(process.env.PUBLIC_URL),
     })
   ],
   devServer: {
@@ -63,5 +67,5 @@ module.exports = {
     },
     hot: true,
     open: true
-  }
+  },
 };

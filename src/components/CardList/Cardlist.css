@@ -1,0 +1,158 @@
+
+.card {
+  border-radius: 10px;
+  width: 303px;
+height: 405px;
+  background: #555;
+  color: #000;
+  position: relative;
+  transition: transform 300ms ease-in-out;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cardContent{
+    width: calc(100% - 60px);
+    padding: 30px;
+    height: fit-content;
+      display: flex;
+    flex-direction: column;
+}
+.card .cardContent>div:first-of-type{
+    color: #FFF;
+font-family: "Sui Generis";
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 32.2px */
+margin-bottom: 4px;
+}
+.card .cardContent>div:nth-of-type(2){
+color: #FFF;
+font-family: "Sui Generis";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+margin-bottom: 12px;
+}
+.cardList {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 19px;
+}
+
+.cardContainer:hover .cardRow {
+  animation-play-state: paused;
+}
+
+.linkContainer {
+  display: inline-flex;
+  gap: 14px;
+}
+
+.cardContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 405px;
+}
+.cardContainerWrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: max-content;
+}
+i {
+  cursor: pointer;
+}
+i:hover {
+  opacity: 0.8;
+}
+
+.leftArrow,
+.rigthArrow {
+  width: 80px;
+  height: 100%;
+  background: #fff;
+  z-index: 30;
+  opacity: 1;
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.leftArrow:hover,
+.rigthArrow:hover {
+  opacity: 0.8;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.leftArrow {
+  left: 0;
+  top: 0;
+  transform-origin: left;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+.rigthArrow {
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, transparent 0%, #000 100%);
+  transform-origin: right;
+  justify-content: flex-end;
+}
+.leftIcon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 10px solid #555555;
+  border-left: 0;
+}
+.rightIcon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #555555;
+  border-right: 0;
+}
+.board{
+    width: 100%;
+    height: 972px;
+  position: relative;
+  padding-top: 192px;
+  padding-bottom: 162px;
+}
+.boardBg{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) blur(1px);
+
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./TopBanner.css";
 import Banner from "./banner.svg";
 import RightArrow from "./right-arrow.svg";
+import bg from "./bannerBg.png";
 
 const TopBanner = () => {
   const onClick = () => {
@@ -12,6 +13,13 @@ const TopBanner = () => {
     <div className="top-banner">
       <Banner />
       <div className="top-banner">
+        <div
+          className="top-banner-bg"
+          style={{ "background-image": `url(${bg})` }}
+        />
+         <div
+          className="top-banner-bg-filter"
+        />
         <div className="top-banner-content">
           <div className="top-title">Who we are?</div>
           <div className="top-content">
@@ -28,52 +36,52 @@ const TopBanner = () => {
               <RightArrow />
             </div>
           </div>
-          <div className="container">
-            <div className="marquee-content">
-              <span className="word">Narrative</span>
-              <span className="divider" />
-              <span className="word">Product</span>
-              <span className="divider" />
-              <span className="word">Token Economists</span>
-              <span className="divider" />
-              <span className="word">Tokenomics</span>
-              <span className="divider" />
-              <span className="word">Strategy</span>
-              <span className="divider" />
-              <span className="word">Narrative</span>
-              <span className="divider" />
-              <span className="word">Product</span>
-              <span className="divider" />
-              <span className="word">Token Economists</span>
-              <span className="divider" />
-              <span className="word">Tokenomics</span>
-              <span className="divider" />
-              <span className="word">Strategy</span>
-              <span className="divider" />
-            </div>
-            <div className="marquee-content">
-              <span className="word">Narrative</span>
-              <span className="divider" />
-              <span className="word">Product</span>
-              <span className="divider" />
-              <span className="word">Token Economists</span>
-              <span className="divider" />
-              <span className="word">Tokenomics</span>
-              <span className="divider" />
-              <span className="word">Strategy</span>
-              <span className="divider" />
-              <span className="word">Narrative</span>
-              <span className="divider" />
-              <span className="word">Product</span>
-              <span className="divider" />
-              <span className="word">Token Economists</span>
-              <span className="divider" />
-              <span className="word">Tokenomics</span>
-              <span className="divider" />
-              <span className="word">Strategy</span>
-              <span className="divider" />
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="marquee-content">
+          <span className="word">Narrative</span>
+          <span className="divider" />
+          <span className="word">Product</span>
+          <span className="divider" />
+          <span className="word">Token Economists</span>
+          <span className="divider" />
+          <span className="word">Tokenomics</span>
+          <span className="divider" />
+          <span className="word">Strategy</span>
+          <span className="divider" />
+          <span className="word">Narrative</span>
+          <span className="divider" />
+          <span className="word">Product</span>
+          <span className="divider" />
+          <span className="word">Token Economists</span>
+          <span className="divider" />
+          <span className="word">Tokenomics</span>
+          <span className="divider" />
+          <span className="word">Strategy</span>
+          <span className="divider" />
+        </div>
+        <div className="marquee-content">
+          <span className="word">Narrative</span>
+          <span className="divider" />
+          <span className="word">Product</span>
+          <span className="divider" />
+          <span className="word">Token Economists</span>
+          <span className="divider" />
+          <span className="word">Tokenomics</span>
+          <span className="divider" />
+          <span className="word">Strategy</span>
+          <span className="divider" />
+          <span className="word">Narrative</span>
+          <span className="divider" />
+          <span className="word">Product</span>
+          <span className="divider" />
+          <span className="word">Token Economists</span>
+          <span className="divider" />
+          <span className="word">Tokenomics</span>
+          <span className="divider" />
+          <span className="word">Strategy</span>
+          <span className="divider" />
         </div>
       </div>
     </div>
