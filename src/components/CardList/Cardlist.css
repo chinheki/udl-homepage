@@ -69,11 +69,13 @@ margin-bottom: 12px;
   height: 405px;
 }
 .cardContainerWrap {
-  width: 100%;
+      width: calc(100% - 352px);
   overflow: hidden;
   display: flex;
   position: relative;
   height: max-content;
+      margin-left: 176px;
+      margin-right: 176px;
 }
 i {
   cursor: pointer;
@@ -142,7 +144,7 @@ i:hover {
     height: 972px;
   position: relative;
   padding-top: 192px;
-  padding-bottom: 162px;
+  padding-bottom: 166px;
 }
 .boardBg{
     width: 100%;
@@ -155,4 +157,11 @@ i:hover {
     background-position: center;
     filter: grayscale(100%) blur(1px);
 
+}
+@media screen and (max-width:800px){
+.cardContainerWrap {
+      width: calc(100% - 100px);
+      margin-left: 50px;
+      margin-right: 50px;
+}
 }

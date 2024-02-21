@@ -1,0 +1,168 @@
+.outer {
+  width: fit-content;
+  aspect-ratio: 1;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .innerMiddle {
+    width: 39px;
+    aspect-ratio: 1;
+    display: block;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    opacity: 0.4;
+  }
+  .inner {
+    width: 25px;
+    aspect-ratio: 1;
+    display: block;
+    background: #fff;
+    border-radius: 100%;
+  }
+  &.hover {
+    animation: ease-in-out 0.6s infinite running byte;
+    .middle {
+      opacity: 0.15;
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 100%;
+    }
+    .outMiddle {
+      width: 70px;
+      opacity: 0.05;
+      aspect-ratio: 1;
+      border-radius: 100%;
+    }
+    .innerMiddle,
+    .inner,
+    .middle,
+    .outMiddle {
+      background: #ffff73;
+    }
+  }
+}
+.pointContainer {
+  position: relative;
+  width: calc(60% - 40px);
+  aspect-ratio: 1597 / 972;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  height: fit-content;
+      align-self: center;
+}
+@keyframes byte {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.area {
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding-top: 200px;
+  padding-bottom: 170px;
+  .small {
+    display: none;
+  }
+  width: calc(100% - 40px);
+}
+.tabContainer {
+  width: 40%;
+  color: #fff;
+}
+.tabContent {
+  font-family: DungGeunMo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 36px */
+  height: 212px;
+  padding-left: 75px;
+  padding-top: 69px;
+}
+.tabRow {
+  display: flex;
+  gap: 20px;
+      width: 100%;
+  position: relative;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.2);
+}
+
+.underline {
+  height: 2px;
+  background: #ffff73;
+  width: 100%;
+  display: block;
+  transition: all 0.1s ease-out;
+  margin: 0;
+  z-index: 20;
+  margin-bottom: -1px;
+}
+
+.tab {
+  height: fit-content;
+  width: 33.33%;
+  min-width: fit-content;
+  color: #fff;
+  font-family: "Sui Generis";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  > div:first-child {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+    .small {
+      display: block;
+    }
+    .wide {
+      display: none;
+    }
+  }
+  .pointContainer {
+    width: 100%;
+  }
+  .tabContainer {
+    width: calc(100% - 80px);
+    padding: 40px;
+  }
+  .tab {
+    width: 33.33%;
+  }
+}

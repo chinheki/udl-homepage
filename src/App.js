@@ -3,15 +3,19 @@ import Sidebar from "./components/Sidebar";
 import TopBanner from "./components/TopBanner";
 import "./App.css";
 import CardList from "./components/CardList";
+import Profiles from "./components/Profiles";
+import Title from "./components/Title";
+import Value from "./components/Value";
 const App = () => {
   return (
     <>
           <Sidebar />
       <TopBanner />
-      <div className='subTitle'>Our portfolio</div>
-      
+      <Title title="Our portfolio" />
+      <Profiles />
+      <Value />
       <CardList />
-      <div className='subTitle'>Writing & Press</div>
+      <Title title="Writing & Press" />
     </>
   );
 };

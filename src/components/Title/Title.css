@@ -1,0 +1,23 @@
+.subTitle {
+  color: #fff;
+  font-family: "Sui Generis";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 78px */
+  z-index: 30;
+  position: relative;
+  margin-bottom: 60px;
+  margin-left: 150px;
+  svg {
+       width: 110px;
+    position: absolute;
+    left: -50px;
+    top: -30px;
+  }
+}
+@media screen and (max-width:800px){
+    .subTitle{
+        margin-left: 80px;
+    }
+}

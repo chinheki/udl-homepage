@@ -7,7 +7,8 @@ import photo3 from "./photo3.jpg";
 import photo4 from "./photo4.png";
 import photo5 from "./photo5.jpg";
 import bg from "./bg.jpg";
-const step = 420;
+import Title from "../Title";
+  const step =420;
 
 const CardList = () => {
   const [scrollL, setScrollL] = useState(false);
@@ -15,24 +16,29 @@ const CardList = () => {
   const onClickRight = () => {
     const parent = document.querySelector("#cardContainer");
     parent?.scrollTo({ left: parent?.scrollLeft + step, behavior: "smooth" });
-    onScroll(step);
+    onScroll(parent?.scrollLeft + step);
   };
   const onClickLeft = () => {
     const parent = document.querySelector("#cardContainer");
     parent?.scrollTo({ left: parent?.scrollLeft - step, behavior: "smooth" });
-    onScroll(-step);
+    onScroll(parent?.scrollLeft - step);
   };
-  const onScroll = (step) => {
+  const onScroll = (scrollLeft) => {
+    let scale = 1;
+    if (document.body.getBoundingClientRect().width < 800) {
+      scale = 0.5;
+    }
     const list = document.querySelector("#cardList"),
       parent = document.querySelector("#cardContainer");
-    if (parent?.scrollLeft + step > 0) {
+    if (scrollLeft > 0) {
       setScrollL(true);
     } else {
       setScrollL(false);
     }
     if (
-      list?.getBoundingClientRect()?.width >
-      parent?.getBoundingClientRect()?.width + parent?.scrollLeft + step
+      list?.getBoundingClientRect()?.width -
+        parent?.getBoundingClientRect()?.width >
+      scrollLeft * scale
     ) {
       setScrollR(true);
     } else {
@@ -40,6 +46,10 @@ const CardList = () => {
     }
   };
   const onResize = () => {
+    let scale = 1;
+    if (document.body.getBoundingClientRect().width < 800) {
+      scale = 0.5;
+    }
     const list = document.querySelector("#cardList"),
       parent = document.querySelector("#cardContainer");
     if (parent?.scrollLeft > 0) {
@@ -48,14 +58,16 @@ const CardList = () => {
       setScrollL(false);
     }
     if (
-      list?.getBoundingClientRect()?.width >
-      parent?.getBoundingClientRect()?.width + parent?.scrollLeft
+      list?.getBoundingClientRect()?.width -
+        parent?.getBoundingClientRect()?.width >
+      parent?.scrollLeft * scale
     ) {
       setScrollR(true);
     } else {
       setScrollR(false);
     }
   };
+
   useEffect(() => {
     let timeout = false;
     const delay = 250;
@@ -66,10 +78,10 @@ const CardList = () => {
     onResize();
   }, []);
   return (
-      <div className="board">
-      <div className="boardBg" style={{ 'background-image': `url(${bg})` }} />
-      <div className='subTitle'>Our team members have been investing and building since 2017</div>
-          
+    <div className="board">
+      <div className="boardBg" style={{ "background-image": `url(${bg})` }} />
+      <Title title="Our team members have been investing and building since 2017" />
+
       <div className="cardContainerWrap">
         {!!scrollL && (
           <div className="leftArrow" onClick={onClickLeft}>
@@ -113,7 +125,6 @@ const CardList = () => {
               xUrl="https://twitter.com/0xProfessorJo"
               lUrl="https://www.linkedin.com/in/donghyeon-jo-8957a154"
             />
-        
           </div>
         </div>
         {!!scrollR && (
