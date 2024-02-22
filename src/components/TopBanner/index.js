@@ -15,7 +15,7 @@ const TopBanner = () => {
       <div className="top-banner">
         <div
           className="top-banner-bg"
-          style={{ "background-image": `url(${bg})` }}
+          style={{ "backgroundImage": `url(${bg})` }}
         />
          <div
           className="top-banner-bg-filter"
@@ -38,7 +38,7 @@ const TopBanner = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="topContainer">
         <div className="marquee-content">
           <span className="word">Narrative</span>
           <span className="divider" />

@@ -33,11 +33,18 @@ html, body, #root {
   font-style: normal;
   font-display: swap;
 }
-@media screen and (max-width:800px){
+@font-face {
+  font-family: 'Poppins';
+  src: url(../public/assets/font/Poppins-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* @media screen and (max-width:800px){
     #root{
 transform: scale(0.5);
 transform-origin: left top;
 width: 200%;
 height: 200%;
     }
-}
+} */
