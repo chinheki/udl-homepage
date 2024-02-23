@@ -1,5 +1,4 @@
 import React from "react";
-import Medium from "./medium.svg";
 import { XOutlined, LinkedinOutlined } from "@ant-design/icons";
 import "./Footer.css";
 

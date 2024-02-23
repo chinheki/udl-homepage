@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
 import TopBanner from "./components/TopBanner";
 import "./App.css";
 import CardList from "./components/CardList";
@@ -9,10 +8,11 @@ import Value from "./components/Value";
 import Blogs from "./components/Blogs";
 import BottomBanner from "./components/BottomBanner";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 const App = () => {
   return (
     <>
-          <Sidebar />
+          <Header />
       <TopBanner />
       <Title title="Our portfolio" />
       <Profiles />
