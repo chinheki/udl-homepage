@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   > * {
     position: absolute;
     top: 50%;
@@ -91,6 +92,7 @@
   padding-bottom: 170px;
   .small {
     display: none;
+    margin-bottom: 60px;
   }
   width: calc(100% - 40px);
 }
@@ -147,6 +149,8 @@
 
 @media screen and (max-width: 1000px) {
   .row {
+    width: 84%;
+    margin: auto;
     flex-direction: column;
     .small {
       display: block;

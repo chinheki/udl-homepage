@@ -180,6 +180,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .top-banner {
+    margin-top: 80px;
+  }
   .top-title {
     font-size: 30px;
     margin-bottom: 50px;
@@ -214,7 +217,7 @@
 
   .topContainer {
     height: 84px;
-  margin-bottom: 130px;
+    margin-bottom: 80px;
     .word {
       font-size: 60px;
       margin-right: 15px;
