@@ -7,6 +7,7 @@
   .subTitle {
     width: 84%;
     margin: auto;
+    margin-bottom: 40px;
   }
   .card {
     border-radius: 10px;
@@ -76,16 +77,16 @@
     display: flex;
     position: relative;
     height: 405px;
+    margin: 0 50px;
   }
   .cardContainerWrap {
-    width: 84%;
+    max-width: 1691px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     display: flex;
     position: relative;
     height: max-content;
-    margin-left: 176px;
-    margin-right: 176px;
   }
   i {
     cursor: pointer;
@@ -118,14 +119,14 @@
   }
 
   .leftArrow {
-    left: 0;
+    left: 50px;
     top: 0;
     transform-origin: left;
     justify-content: flex-start;
     background: linear-gradient(to right, #000 0%, transparent 100%);
   }
   .rigthArrow {
-    right: 0;
+    right: 50px;
     top: 0;
     background: linear-gradient(to right, transparent 0%, #000 100%);
     transform-origin: right;
