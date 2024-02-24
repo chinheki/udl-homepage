@@ -14,14 +14,17 @@ const CardList = () => {
   const [scrollL, setScrollL] = useState(false);
   const [scrollR, setScrollR] = useState(false);
   const onClickRight = () => {
+      const scroll =document.querySelector('.card').getBoundingClientRect().width+19;
     const parent = document.querySelector("#cardContainer");
-    parent?.scrollTo({ left: parent?.scrollLeft + step, behavior: "smooth" });
-    onScroll(parent?.scrollLeft + step);
+    parent?.scrollTo({ left: parent?.scrollLeft +scroll, behavior: "smooth" });
+    onScroll(parent?.scrollLeft +scroll);
   };
   const onClickLeft = () => {
+      const scroll =document.querySelector('.card').getBoundingClientRect().width+19;
+
     const parent = document.querySelector("#cardContainer");
-    parent?.scrollTo({ left: parent?.scrollLeft - step, behavior: "smooth" });
-    onScroll(parent?.scrollLeft - step);
+    parent?.scrollTo({ left: parent?.scrollLeft -scroll, behavior: "smooth" });
+    onScroll(parent?.scrollLeft -scroll);
   };
   const onScroll = (scrollLeft) => {
     let scale = 1;

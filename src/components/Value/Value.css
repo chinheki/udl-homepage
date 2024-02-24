@@ -94,7 +94,6 @@
     display: none;
     margin-bottom: 60px;
   }
-  width: calc(100% - 40px);
 }
 .tabContainer {
   width: 40%;
@@ -152,6 +151,8 @@
     width: 84%;
     margin: auto;
     flex-direction: column;
+        padding-top: 100px;
+    padding-bottom: 80px;
     .small {
       display: block;
     }
@@ -163,10 +164,19 @@
     width: 100%;
   }
   .tabContainer {
-    width: calc(100% - 80px);
-    padding: 40px;
+width: 100%;
+
   }
   .tab {
     width: 33.33%;
+  }
+  .tabRow{
+    gap: 0;
+  }
+  .tabContent{
+        padding-left: 0;
+    padding-top: 30px;
+    font-size: 20px;
+    height: fit-content;
   }
 }

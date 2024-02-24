@@ -17,7 +17,7 @@ const Header = () => {
       <div className="tabPart">
         <div className="tab" onClick={()=>onClickTab("#portfolio")}>
           <p>Protfolio</p>
-          <div className="num">28</div>
+          <div className="num">0</div>
         </div>
 
         <div className="tab" onClick={()=>onClickTab("#teamList")}>Team</div>
