@@ -2,11 +2,10 @@ import React from "react";
 import "./BottomBanner.css";
 
 const BottomBanner = () => {
-
   return (
     <div className="bottom-banner">
       <div className="bottomContainer">
-      <div className="marquee-content">
+        <div className="marquee-content">
           <span className="word">Degen</span>
           <span className="divider" />
           <span className="word">Builder</span>
@@ -43,7 +42,7 @@ const BottomBanner = () => {
           <span className="divider" />
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 export default BottomBanner;

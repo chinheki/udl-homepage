@@ -63,7 +63,7 @@
   background-position: center;
   display: flex;
   height: fit-content;
-      align-self: center;
+  align-self: center;
 }
 @keyframes byte {
   0% {
@@ -111,7 +111,7 @@
 .tabRow {
   display: flex;
   gap: 20px;
-      width: 100%;
+  width: 100%;
   position: relative;
   border-bottom: solid 0.5px rgba(255, 255, 255, 0.2);
 }

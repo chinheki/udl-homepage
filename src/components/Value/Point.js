@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Value.css"
+import "./Value.css";
 
 const Point = ({ top, left, hover }) => {
   return (

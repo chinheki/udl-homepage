@@ -15,11 +15,9 @@ const TopBanner = () => {
       <div className="top-banner">
         <div
           className="top-banner-bg"
-          style={{ "backgroundImage": `url(${bg})` }}
+          style={{ backgroundImage: `url(${bg})` }}
         />
-         <div
-          className="top-banner-bg-filter"
-        />
+        <div className="top-banner-bg-filter" />
         <div className="top-banner-content">
           <div className="top-title">Who we are?</div>
           <div className="top-content">

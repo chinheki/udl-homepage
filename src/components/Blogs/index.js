@@ -11,8 +11,8 @@ const Blogs = () => {
     setList(list);
   }, []);
   return (
-    <div className="blogWrap">
-      <Title title="Writing & Press" />
+    <div className="blogWrap" id="blog">
+      <Title title="Writing & Press" id="blogTitle"/>
       <div className="blogBoard">
         {list.map((blog, i) => (
           <Blog

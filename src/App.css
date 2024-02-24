@@ -1,4 +1,6 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -6,6 +8,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -20,31 +23,23 @@ html, body, #root {
   align-items: center;
 }
 @font-face {
-  font-family: 'Sui Generis';
+  font-family: "Sui Generis";
   src: url(../public/assets/font/sui\ generis\ rg.otf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'DungGeunMo';
+  font-family: "DungGeunMo";
   src: url(../public/assets/font/DungGeunMoRegular.woff.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url(../public/assets/font/Poppins-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-/* @media screen and (max-width:800px){
-    #root{
-transform: scale(0.5);
-transform-origin: left top;
-width: 200%;
-height: 200%;
-    }
-} */

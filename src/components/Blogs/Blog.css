@@ -3,8 +3,8 @@
   margin-top: 175px;
   display: flex;
   flex-direction: column;
-    width: 84%;
-    align-self: center;
+  width: 84%;
+  align-self: center;
   .blogBoard {
     margin-top: 10px;
     width: 100%;
@@ -53,20 +53,19 @@
     cursor: pointer;
   }
 }
-@media screen and (max-width:800px){
- .blogWrap {
-  margin-top: 100px;
-  .blogRow {
-    margin-top: 20px;
-    gap: 10px;
-    .title {
-      font-size: 25px;
-      padding-bottom: 10px;
+@media screen and (max-width: 800px) {
+  .blogWrap {
+    margin-top: 100px;
+    .blogRow {
+      margin-top: 20px;
+      gap: 10px;
+      .title {
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
+    }
+    .readMore {
+      margin-top: 40px;
     }
   }
-  .readMore {
-    margin-top: 40px;
-  }
-}
- 
 }

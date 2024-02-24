@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Value.css"
+import "./Value.css";
 import Title from "../Title";
 import Point from "./Point";
 import bg from "./bg.png";
@@ -8,33 +8,36 @@ const Value = () => {
   const [hover, setHover] = useState(1);
 
   return (
-      <div className="row">
-              <Title title="Our Value-Add Thesis"  className="small"/>
-      <div className="pointContainer" style={{ "background-image": `url(${bg})` }}>
+    <div className="row">
+      <Title title="Our Value-Add Thesis" className="small" />
+      <div
+        className="pointContainer"
+        style={{ "background-image": `url(${bg})` }}
+      >
         <Point top="8%" left="12%" hover={hover === 1} />
         <Point top="30%" left="60%" hover={hover === 2} />
         <Point top="82%" left="90%" hover={hover === 3} />
         <div
           className="area"
           onMouseEnter={() => setHover(1)}
-                  onMouseDown={() => setHover(1)}
-                  style={{ "width": '40%' }}
+          onMouseDown={() => setHover(1)}
+          style={{ width: "40%" }}
         />
         <div
           className="area"
           onMouseEnter={() => setHover(2)}
           onMouseDown={() => setHover(2)}
-                  style={{ "width": '20%' }}
+          style={{ width: "20%" }}
         />
         <div
           className="area"
           onMouseEnter={() => setHover(3)}
           onMouseDown={() => setHover(3)}
-                  style={{ "width": '40%' }}
+          style={{ width: "40%" }}
         />
       </div>
-          <div className="tabContainer">
-              <Title title="Our Value-Add Thesis" className="wide"/>
+      <div className="tabContainer">
+        <Title title="Our Value-Add Thesis" className="wide" />
         <div className="tabRow">
           <div
             className="tab"
@@ -74,4 +77,3 @@ const Value = () => {
 };
 
 export default Value;
-

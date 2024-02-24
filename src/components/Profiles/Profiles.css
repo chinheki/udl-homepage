@@ -1,121 +1,127 @@
+.subTitle {
+  &.profile {
+    width: 84%;
+    margin: auto;
+    margin-bottom: 63px;
+  }
+}
 .profileRow {
   background: #000;
-  width: calc(100% - 200px);
+  width:  100%;
+  align-self: center;
   margin: 0;
   display: flex;
   height: fit-content;
   position: relative;
-      padding: 0 100px;
-}
-.caseCard {
-  width: 330px;
-  height: 421px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: #030303;
-  backdrop-filter: blur(2px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-.caseCard:hover {
-  filter: contrast(0.3);
-}
-.profileList {
-  width: 100%;
-  padding: 60px 0 157px 0;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  position: relative;
-}
-.profileColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-  width: fit-content;
-  height: inherit;
-  position: relative;
-}
-.profileColumn:nth-of-type(2) {
-  padding-top: 100px;
-}
-.profileList {
-  &.left {
-    align-items: center;
-  }
-}
-.profileColumn .caseCardMore {
-  display: none;
-}
-.caseCardMore {
-  position: relative;
-  height: fit-content;
-  .up {
+
+  .caseCard {
     width: 330px;
-    height: 453.75px;
-    flex-shrink: 0;
+    height: 421px;
     border-radius: 10px;
-    background: #ffff73;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #030303;
     backdrop-filter: blur(2px);
-    z-index: 10;
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     cursor: pointer;
     &:hover {
-      filter: sepia(1);
+      filter: contrast(0.3);
     }
-    .upText {
-      color: #000;
-      font-family: "Sui Generis";
-      font-size: 33px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 140%; /* 46.2px */
-      padding: 30px 30px 0 30px;
+  }
+  .profileList {
+    width: 100%;
+    padding: 60px 0 157px 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    position: relative;
+    &.left {
+      align-items: center;
     }
-    .downText {
-      width: 100%;
+  }
+  .profileColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: fit-content;
+    height: inherit;
+    position: relative;
+    &:nth-of-type(2) {
+      padding-top: 100px;
+    }
+    .caseCardMore {
+      display: none;
+    }
+  }
+  .caseCardMore {
+    position: relative;
+    height: fit-content;
+    .up {
+      width: 330px;
+      height: 453.75px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: #ffff73;
+      backdrop-filter: blur(2px);
+      z-index: 10;
+      position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      border-top: solid 1px #000;
-      p {
+      cursor: pointer;
+      &:hover {
+        filter: sepia(1);
+      }
+      .upText {
         color: #000;
         font-family: "Sui Generis";
-        font-size: 23px;
+        font-size: 33px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 32.2px */
-        padding-left: 18px;
+        line-height: 140%; /* 46.2px */
+        padding: 30px 30px 0 30px;
       }
-      svg {
-        padding-right: 17px;
-        align-self: center;
+      .downText {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px #000;
+        p {
+          color: #000;
+          font-family: "Sui Generis";
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%; /* 32.2px */
+          padding-left: 18px;
+        }
+        svg {
+          padding-right: 17px;
+          align-self: center;
+        }
       }
     }
+    .down {
+      border-radius: 10px;
+      border: 1px solid #fff;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(2px);
+      width: 330px;
+      height: 453.75px;
+      flex-shrink: 0;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 0;
+    }
   }
-  .down {
-    border-radius: 10px;
-    border: 1px solid #fff;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
-    width: 330px;
-    height: 453.75px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 0;
+  .more {
+    background: yellow;
+    z-index: 20;
+    position: relative;
   }
-}
-.more {
-  background: yellow;
-  z-index: 20;
-  position: relative;
 }
 
 @media screen and (max-width: 1400px) {
@@ -123,9 +129,9 @@
     &.left {
       display: none;
     }
-  }
-  .profileColumn .caseCardMore {
-    display: block;
+    .profileColumn .caseCardMore {
+      display: block;
+    }
   }
 }
 .profileBg {
@@ -214,4 +220,103 @@
     align-self: center;
     margin-right: 16px;
   }
+}
+
+@media screen and (max-width: 800px) {
+    .subTitle {
+  &.profile {
+    margin-bottom: 30px;
+  }
+}
+.profileRow {
+
+  .caseCard {
+    width:100%;
+    aspect-ratio: 330 / 421;
+    border-radius: 3%;
+    height: unset;
+  }
+  .profileList {
+    padding: 30px 0 78px 0;
+    gap: 12px;
+  }
+  .profileColumn {
+    gap: 21px;
+    width: 40%;
+    &:nth-of-type(2) {
+      padding-top: 100px;
+    }
+  }
+  .caseCardMore {
+    .up {
+      width: 330px;
+      height: 453.75px;
+      border-radius: 10px;
+      .upText {
+        font-size: 33px;
+        padding: 30px 30px 0 30px;
+      }
+      .downText {
+        p {
+          font-size: 23px;
+          padding-left: 18px;
+        }
+        svg {
+          padding-right: 17px;
+        }
+      }
+    }
+    .down {
+      border-radius: 10px;
+      width: 330px;
+      height: 453.75px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+.caseCard {
+    height: unset;
+  .seed {
+    font-size: 10px;
+    width: 35px;
+    height: 12px;
+    padding: 3px 9px;
+    gap: 5px;
+    border-radius: 50px;
+    margin: 12px;
+    height: calc(15% - 24px);
+  }
+  .icon {
+    width: 55%;
+    height: 55%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    margin-top: 0px;
+  }
+  .name {
+    height: 15%;
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  .dec {
+    height: calc(10% + 5px);
+    font-size: 6px;
+    margin-top: -5px;
+  }
+  .link {
+    height: 15%;
+    position: relative;
+  }
+  .link > div:first-child {
+    font-size: 12px;
+    margin: 0px 20px;
+    display:flex;
+    align-items: center;
+  }
+  .link svg {
+    align-self: center;
+    margin-right: 16px;
+  }
+}
 }
