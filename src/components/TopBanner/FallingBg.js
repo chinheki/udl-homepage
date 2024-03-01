@@ -18,10 +18,10 @@ const style=useMemo(()=>{
          };
 },[])
   return (
-    <section class="container" style={style}>
-    <div class="item">
+    <section className="container" style={style}>
+    <div className="item">
       {number.map(n=>(
-      <span class="item-txt">{n}</span>
+      <span className="item-txt">{n}</span>
       ))}
      </div>
 
@@ -31,7 +31,7 @@ const style=useMemo(()=>{
 const FallingBg = () => {
 
   return (
-      <div class="top-banner-bg">
+      <div className="top-banner-bg">
           {Array(15).fill(0).map(i =>
     <Num />
             )}

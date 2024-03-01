@@ -6,91 +6,130 @@
       "establishedAt": 2024,
       "type": "Infra",
       "homepage": "https://www.storyprotocol.xyz/",
-      "stage":"Seed",
-      "region":"USA",
+      "stage": "Seed",
+      "region": "USA",
       "image": "Story.png"
     },
-
-     {
-              "image":"bluefin.png",
+    {
+      "name": "Elixir",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.elixir.xyz/",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Elixir.png"
+    },
+    {
+      "name": "Aevo",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "DeFi",
+      "homepage": "https://www.aevo.xyz/",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Aevo.png"
+    },
+    {
+      "image": "vertex.png",
+      "name": "Vertex",
       "location": "UK",
-             "name":"Bluefin",
-      "establishedAt": 2023,
-              "type":"DeFi",
-      "stage":"Seed",
-      "region":"EU",
-              "homepage":"https://bluefin.io/"
-            },
-            {
-              "image":"layern.png",
-             "name":"LayerN",
-              "location":"Singapole",
-      "establishedAt": 2023,
-              "type":"DeFi",
-      "stage":"Seed",
-      "region":"Asia",
-              "homepage":"https://www.layern.com/"
-            },
-            {
-              "image":"vertex.png",
-             "name":"Vertex",
-              "location":"UK",
       "establishedAt": 2021,
-              "type":"NFT",
-      "stage":"Seed",
-      "region":"EU",
-              "homepage":"https://vertexprotocol.com/"
-            },
-            {
-              "image":"stepn.png",
-             "name":"Stepn",
-              "location":"UK",
-      "establishedAt": 2021,
-              "type":"NFT",
-      "stage":"Seed",
-      "region":"EU",
-              "homepage":"https://www.stepn.com/"
-            },
-            {
-              "image":"grvt.png",
-             "name":"GRVT",
-              "location":"Singapole, 2023",
-              "type":"DeFi",
-      "stage":"Seed",
-      "region":"Asia",
-              "homepage":"https://grvt.io/"
-            },
-
-
-    {
-      "name": "Story",
-      "location": "USA",
-      "establishedAt": 2024,
-      "type": "Infra",
-      "stage":"Seed",
-      "region":"USA",
-      "homepage": "https://www.storyprotocol.xyz/",
-      "image": "Story.png"
+      "type": "NFT",
+      "stage": "Seed",
+      "region": "EU",
+      "homepage": "https://vertexprotocol.com/"
     },
     {
-      "name": "Story",
+      "name": "Apeture",
       "location": "USA",
       "establishedAt": 2024,
-      "type": "Infra",
-      "stage":"Seed",
-      "region":"USA",
-      "homepage": "https://www.storyprotocol.xyz/",
-      "image": "Story.png"
+      "type": "DeFi",
+      "homepage": "aperture.finance",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Apeture.png"
     },
     {
-      "name": "Story",
-      "location": "USA",
+      "name": "Goplus",
+      "location": "Asia",
       "establishedAt": 2024,
       "type": "Infra",
-      "stage":"Seed",
-      "region":"USA",
-      "homepage": "https://www.storyprotocol.xyz/",
-      "image": "Story.png"
+      "homepage": "https://gopluseco.io/",
+      "stage": "Seed",
+      "region": "Asia",
+      "image": "Goplus.png"
+    },
+    {
+      "name": "Sax",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "DeFi",
+      "homepage": "",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Sax.png"
+    },
+    {
+      "name": "Sax",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "DeFi",
+      "homepage": "https://blasterswap.com/",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Sax2.png"
+    },
+    {
+      "name": "Moby",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "DeFi",
+      "homepage": "https://launchmoby.com/",
+      "stage": "Seed",
+      "region": "USA",
+      "image": "Moby.png"
+    },
+    {
+      "image": "layern.png",
+      "name": "LayerN",
+      "location": "Singapole",
+      "establishedAt": 2023,
+      "type": "DeFi",
+      "stage": "Seed",
+      "region": "Asia",
+      "homepage": "https://www.layern.com/"
+    },
+
+    {
+      "image": "bluefin.png",
+      "location": "UK",
+      "name": "Bluefin",
+      "establishedAt": 2023,
+      "type": "DeFi",
+      "stage": "Seed",
+      "region": "EU",
+      "homepage": "https://bluefin.io/"
+    },
+
+    {
+      "image": "grvt.png",
+      "name": "GRVT",
+      "location": "Singapole, 2023",
+      "type": "DeFi",
+      "stage": "Seed",
+      "region": "Asia",
+      "homepage": "https://grvt.io/"
+    },
+    {
+      "image": "stepn.png",
+      "name": "Stepn",
+      "location": "UK",
+      "establishedAt": 2021,
+      "type": "NFT",
+      "stage": "Seed",
+      "region": "EU",
+      "homepage": "https://www.stepn.com/"
     }
   ]
 }

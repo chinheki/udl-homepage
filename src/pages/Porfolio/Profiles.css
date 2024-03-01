@@ -4,15 +4,13 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-min-height: calc(100vh - 406px);
   position: relative;
   height: fit-content;
 }
 .subTitle {
   &.portfolioTitle {
     width: 84%;
-    margin: auto;
-    margin-top: 60px;
+    margin:60px auto 0 auto;
     height: fit-content;
   }
 }
@@ -24,6 +22,11 @@ min-height: calc(100vh - 406px);
   justify-items: center;
   justify-content: flex-start;
   margin-bottom: 60px;
+  height: fit-content;
+  &:last-of-type{
+    min-height: calc(100vh - 701px);
+
+  }
 }
 .portfolioFilter {
   margin-bottom: 35px;

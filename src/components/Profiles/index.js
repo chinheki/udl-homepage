@@ -22,6 +22,7 @@ const Profiles = () => {
               key={i}
               img={p.image}
               name={p.name}
+              stage={p.stage}
               dec={`${p.location}, ${p.establishedAt}`}
           type={p.type}
               link={p.homepage}
@@ -34,6 +35,7 @@ const Profiles = () => {
                 <CaseCard
               key={i}
               img={p.image}
+              stage={p.stage}
               name={p.name}
               dec={`${p.location}, ${p.establishedAt}`}
           type={p.type}

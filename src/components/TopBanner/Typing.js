@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import './Typing.css'
 
-const speed = 100;
+const speed = 80;
 const start = 500;
 const underlineDuration = 500;
 const underlineDelay = 1000;
@@ -13,8 +13,8 @@ const texts =[
 ]
 const Typing = () => {
   return (
-      <div class="typewriter">
-        <p>
+      <div className="typewriter">
+        <div className="typingRow">
           {texts[0].map((char, i) => (
             <span
               key={i}
@@ -33,18 +33,18 @@ const Typing = () => {
               {char}
             </span>
           ))}
-                  <div class="underline"
+                  <div className="underline"
                       style={{
                           animationDelay: `${start+underlineDelay + texts[0].length * speed + texts[1].length * speed}ms`,
                           animationDuration:`${underlineDuration}ms` }}
                   
                   />
-                  <div class="mark" style={{
+                  <div className="mark" style={{
                       "animation": `blink-caret 0.8s step-end infinite,
       stop-caret 0.5s step-end ${underline+texts[0].length*speed+texts[1].length*speed}ms forwards`
                   }} />
-        </p>
-        <p>
+        </div>
+        <div className="typingRow">
           {texts[2].map((char, i) => (
             <span
               key={i}
@@ -54,10 +54,10 @@ const Typing = () => {
               {char}
             </span>
           ))}
-                  <div class="markDelay"
+                  <div className="markDelay"
               style={{ animationDelay: `${start+underline+texts[0].length*speed+texts[1].length*speed}ms` }}
                   />
-        </p>
+        </div>
       </div>
   );
 };

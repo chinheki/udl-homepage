@@ -2,7 +2,7 @@
   display: flex;
   width: 84%;
   min-width: fit-content;
-  margin: 0;
+  margin:0 auto;
   max-height: 198px;
   align-items: center;
   justify-content: space-between;

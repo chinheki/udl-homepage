@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from "react";
 import "./TopBanner.css";
 import RightArrow from "./right-arrow.svg";
-import FallingBg from "./FallingBg";
 import Typing from "./Typing";
 const TopBanner = () => {
   const onClick = () => {
@@ -11,7 +10,7 @@ const TopBanner = () => {
     <div className="top-banner">
       <Typing />
       <div className="top-banner-title svgContainer" />
-        <div className="top-banner-logo" />
+        <div className="top-banner-logo  svgContainer" />
         <div className="top-banner-title-bg" />
     <div className="top-banner">
           {/* <FallingBg /> */}

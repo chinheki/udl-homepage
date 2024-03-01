@@ -103,6 +103,7 @@ const Portfolio = () => {
             <CaseCard
               img={p.image}
               name={p.name}
+              stage={p.stage}
               dec={`${p.location}, ${p.establishedAt}`}
               type={p.type}
               link={p.homepage}

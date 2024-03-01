@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Blog.css";
-import { getBlogList } from "../../api/api";
 import Blog from "./Blog";
 import RightArrow from "./rightArrow.svg";
 import Title from "../Title";
+import data from "@resource/blogs.json";
 const Blogs = () => {
-  const [list, setList] = useState([]);
-  useEffect(() => {
-    const list = getBlogList();
-    setList(list);
-  }, []);
   return (
     <div className="blogWrap" id="blog">
       <Title title="Writing & Press" id="blogTitle"/>
       <div className="blogBoard">
-        {list.map((blog, i) => (
+        {data.data.map((blog, i) => (
           <Blog
             key={i}
-            time={blog.time ?? ""}
+            time={blog.subTitle ?? ""}
             title={blog.title ?? ""}
             link={blog.link ?? ""}
           />
