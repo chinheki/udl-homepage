@@ -6,7 +6,7 @@ const Card = ({ url, name, xUrl, lUrl, type }) => {
          window.open(uri)
      }
   return (
-      <div className="card" style={{ 'background-image': `url(${url})` }}>
+      <div className="card" style={{ backgroundImage: `url(${url})` }}>
           <div className="cardContent">
               
       <div>{name}</div>

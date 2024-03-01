@@ -1,13 +1,18 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
-const path = require("path");
+const CopyFilePlugin = require("copy-webpack-plugin")
 
+const path = require("path");
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+   entry: {
+    main: './src/index.js',
+    portfolio: './src/pages/Porfolio/index.js',
+  },
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "build/")
+    filename: '[name].[contenthash].bundle.js',
+    path: path.resolve(__dirname, "build/"),
+          publicPath: '/', 
   },
   module: {
     rules: [
@@ -20,8 +25,13 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader",  {
+          loader: 'css-loader',
+          options: {
+          url:false,
+        }}]
       },
+    
       {
         test: /\.(jpe?g|png|gif|jfif)$/i,
         use: [
@@ -46,12 +56,22 @@ module.exports = {
       }
     ]
   },
+   ignoreWarnings: [
+    {
+      module: /log4js/,
+      message: /Critical dependency: the request of a dependency is an expression/,
+    },
+  ],
   resolve: {
     extensions: [".js", ".jsx"],
     modules: [
       path.resolve(__dirname, "node_modules"),
-      path.resolve(__dirname, "./")
-    ]
+      path.resolve(__dirname, "./"),
+    ],
+       alias: {
+      '@resource': path.resolve(__dirname, './src/resource'),
+      '@': path.resolve(__dirname, './src'),
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -59,7 +79,23 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.PUBLIC_URL': JSON.stringify(process.env.PUBLIC_URL),
-    })
+    }),
+    new CopyFilePlugin({
+      patterns: [
+        {
+          context: path.resolve(__dirname, "./src/resource/images"),
+          from: path.resolve(__dirname, "./src/resource/images"),
+          to: path.resolve(__dirname, "build/images"),
+                    noErrorOnMissing: true
+        },
+               {
+          context: path.resolve(__dirname, "./src/resource/portfolioImages"),
+          from: path.resolve(__dirname, "./src/resource/portfolioImages"),
+          to: path.resolve(__dirname, "build/portfolioImages"),
+                    noErrorOnMissing: true
+        },
+      ],
+    }),
   ],
   devServer: {
     static: {

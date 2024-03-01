@@ -43,3 +43,9 @@ body,
   font-style: normal;
   font-display: swap;
 }
+
+.svgContainer{
+   background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

@@ -1,67 +1,51 @@
-import React from "react";
+import React,{ useState } from "react";
 import "./Profiles.css";
-import MoreCaseCard from "./MoreCaseCard";
-import CaseCard from "./CaseCard";
-import bg from "./bg.jpg";
-import bluefin from "./bluefin.png";
-import layern from "./layern.png";
-import vertex from "./vertex.png";
-import stepn from "./stepn.png";
-import grvt from "./grvt.png";
 import Title from "../Title";
+import data from "@resource/portfolio.json"
+import bg from '@resource/images/portfolioBg.jpg'
+import CaseCard from "./CaseCard";
+import MoreCaseCard from "./MoreCaseCard";
 const Profiles = () => {
+  const sample=[["Bluefin","LayerN","Vertex"].map(n=>data.data.find(p=>p.name===n)),["Stepn","GRVT"].map(n=>data.data.find(p=>p.name===n))]
+
   return (
     <>
       <Title title="Our portfolio" className="profile" id="portfolio"/>
-      <div className="profileRow">
+   <div className="profileRow">
         <div
           className="profileBg"
-          style={{ "background-image": `url(${bg})` }}
         />
         <div className="profileList">
-          <div className="profileColumn">
+        <div className="profileColumn">
+          {sample[0].map((p,i) =>
             <CaseCard
-              img={bluefin}
-              name="Bluefin"
-              dec="UK, 2023"
-              type="DeFi"
-              link="https://bluefin.io/"
+              key={i}
+              img={p.image}
+              name={p.name}
+              dec={`${p.location}, ${p.establishedAt}`}
+          type={p.type}
+              link={p.homepage}
             />
-            <CaseCard
-              img={layern}
-              name="LayerN"
-              dec="Singapole, 2023"
-              type="DeFi"
-              link="https://www.layern.com/"
-            />
-            <CaseCard
-              img={vertex}
-              name="Vertex"
-              dec="UK, 2021"
-              type="NFT"
-              link="https://vertexprotocol.com/"
-            />
+            )}
+          
           </div>
           <div className="profileColumn">
-            <CaseCard
-              img={stepn}
-              name="Stepn"
-              dec="UK, 2021"
-              type="NFT"
-              link="https://www.stepn.com/"
+              {sample[1].map((p,i) =>
+                <CaseCard
+              key={i}
+              img={p.image}
+              name={p.name}
+              dec={`${p.location}, ${p.establishedAt}`}
+          type={p.type}
+              link={p.homepage}
             />
-            <CaseCard
-              img={grvt}
-              name="GRVT"
-              dec="Singapole, 2023"
-              type="DeFi"
-              link="https://grvt.io/"
-            />
-            <MoreCaseCard />
+            )}
+          
+          <MoreCaseCard  />
           </div>
         </div>
         <div className="profileList left">
-          <MoreCaseCard />
+        <MoreCaseCard />
         </div>
       </div>
     </>

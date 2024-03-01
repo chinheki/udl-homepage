@@ -5,16 +5,7 @@
     margin-bottom: 63px;
   }
 }
-.profileRow {
-  background: #000;
-  width: 100%;
-  align-self: center;
-  margin: 0;
-  display: flex;
-  height: fit-content;
-  position: relative;
-
-  .caseCard {
+.caseCard {
     width: 330px;
     height: 421px;
     border-radius: 10px;
@@ -30,6 +21,16 @@
       filter: contrast(0.3);
     }
   }
+.profileRow {
+  background: #000;
+  width: 100%;
+  align-self: center;
+  margin: 0;
+  display: flex;
+  height: fit-content;
+  position: relative;
+
+  
   .profileList {
     width: 100%;
     padding: 60px 0 157px 0;
@@ -55,7 +56,20 @@
       display: none;
     }
   }
-  .caseCardMore {
+ 
+}
+
+@media screen and (max-width: 1400px) {
+  .profileList {
+    &.left {
+      display: none;
+    }
+    .profileColumn .caseCardMore {
+      display: block;
+    }
+  }
+}
+ .caseCardMore {
     position: relative;
     height: fit-content;
     .up {
@@ -122,18 +136,6 @@
     z-index: 20;
     position: relative;
   }
-}
-
-@media screen and (max-width: 1400px) {
-  .profileList {
-    &.left {
-      display: none;
-    }
-    .profileColumn .caseCardMore {
-      display: block;
-    }
-  }
-}
 .profileBg {
   width: 100%;
   height: 100%;
@@ -146,6 +148,7 @@
   filter: grayscale(100%) blur(1px);
   opacity: 0.3;
   z-index: 0;
+   background-image: url(/images/portfolioBg.jpg)
 }
 .caseCard {
   .seed {
@@ -320,4 +323,21 @@
       margin-right: 16px;
     }
   }
+}
+
+
+.portfolioList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    max-width: fit-content;
+    min-width: 100%;
+}
+.portfolioRow{
+  width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

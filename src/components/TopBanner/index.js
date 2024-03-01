@@ -1,22 +1,20 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./TopBanner.css";
-import Banner from "./banner.svg";
 import RightArrow from "./right-arrow.svg";
-import bg from "./bannerBg.png";
-
+import FallingBg from "./FallingBg";
+import Typing from "./Typing";
 const TopBanner = () => {
   const onClick = () => {
     window.open("https://discord.gg/r2WVVFYMyf");
   };
-
   return (
     <div className="top-banner">
-      <Banner />
-      <div className="top-banner">
-        <div
-          className="top-banner-bg"
-          style={{ backgroundImage: `url(${bg})` }}
-        />
+      <Typing />
+      <div className="top-banner-title svgContainer" />
+        <div className="top-banner-logo" />
+        <div className="top-banner-title-bg" />
+    <div className="top-banner">
+          {/* <FallingBg /> */}
         <div className="top-banner-bg-filter" />
         <div className="top-banner-content">
           <div className="top-title">Who we are?</div>

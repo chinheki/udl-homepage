@@ -1,0 +1,118 @@
+{
+  "data": [
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+
+     {
+              "image":"bluefin.png",
+      "location": "UK",
+             "name":"Bluefin",
+      "establishedAt": 2023,
+              "type":"DeFi",
+              "homepage":"https://bluefin.io/"
+            },
+            {
+              "image":"layern.png",
+             "name":"LayerN",
+              "location":"Singapole",
+      "establishedAt": 2023,
+              "type":"DeFi",
+              "homepage":"https://www.layern.com/"
+            },
+            {
+              "image":"vertex.png",
+             "name":"Vertex",
+              "location":"UK",
+      "establishedAt": 2021,
+              "type":"NFT",
+              "homepage":"https://vertexprotocol.com/"
+            },
+            {
+              "image":"stepn.png",
+             "name":"Stepn",
+              "location":"UK",
+      "establishedAt": 2021,
+              "type":"NFT",
+              "homepage":"https://www.stepn.com/"
+            },
+            {
+              "image":"grvt.png",
+             "name":"GRVT",
+              "location":"Singapole, 2023",
+              "type":"DeFi",
+              "homepage":"https://grvt.io/"
+            },
+
+
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    },
+    {
+      "name": "Story",
+      "location": "USA",
+      "establishedAt": 2024,
+      "type": "Infra",
+      "homepage": "https://www.storyprotocol.xyz/",
+      "image": "Story.png"
+    }
+  ]
+}

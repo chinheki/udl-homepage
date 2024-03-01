@@ -4,7 +4,7 @@ import bg from "./icon.svg";
 const Title = ({ title, className,id }) => {
   return (
       <div className={"subTitle" + (className ? ` ${className}` : "")} id={id}>
-      <div className="titleBg" style={{ "background-image": `svg(${bg})` }} />
+      <div className="titleBg svgContainer" style={{ backgroundImage: `svg(${bg})` }} />
       {title}
     </div>
   );

@@ -6,7 +6,7 @@ import { onClickTab } from "../Header";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="logo" />
+      <div className="logo svgContainer" />
       <div className="right">
         <div className="tabPart">
           <div className="tab" onClick={()=>onClickTab("#portfolio")}>
@@ -29,7 +29,7 @@ const Footer = () => {
             style={{ color: "#fff" }}
           />
           <div
-            className="logo medium"
+            className="logo medium svgContainer"
             onClick={() => window.open("https://medium.com/undefined-labs")}
           />
         </div>

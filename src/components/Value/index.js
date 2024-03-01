@@ -12,7 +12,7 @@ const Value = () => {
       <Title title="Our Value-Add Thesis" className="small" />
       <div
         className="pointContainer"
-        style={{ "background-image": `url(${bg})` }}
+        style={{ backgroundImage: `url(${bg})` }}
       >
         <Point top="8%" left="12%" hover={hover === 1} />
         <Point top="30%" left="60%" hover={hover === 2} />

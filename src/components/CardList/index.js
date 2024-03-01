@@ -82,7 +82,7 @@ const CardList = () => {
   }, []);
   return (
     <div className="board" id="teamList">
-      <div className="boardBg" style={{ "background-image": `url(${bg})` }} />
+      <div className="boardBg" style={{ backgroundImage: `url(${bg})` }} />
       <Title title="Our team members have been investing and building since 2017" id="team"/>
 
       <div className="cardContainerWrap">
