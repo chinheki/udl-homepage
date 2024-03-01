@@ -5,7 +5,7 @@ import Value from "../../components/Value";
 import CardList from "../../components/CardList";
 import Blogs from "../../components/Blogs";
 import BottomBanner from "../../components/BottomBanner";
-import Layout from "../../components/Layout/inedx";
+import Layout from "../../components/Layout";
 const Homepage = () => {
   return (
     <Layout>

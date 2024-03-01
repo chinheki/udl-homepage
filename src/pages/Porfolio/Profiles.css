@@ -1,17 +1,97 @@
-.portfolioRow{
+.portfolioRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-        position: relative;
+min-height: calc(100vh - 406px);
+  position: relative;
+  height: fit-content;
 }
-.portfolioList{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    max-width: fit-content;
-    min-width: 100%;
+.subTitle {
+  &.portfolioTitle {
+    width: 84%;
+    margin: auto;
+    margin-top: 60px;
+    height: fit-content;
+  }
+}
 
+.portfolioList {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+.portfolioFilter {
+  margin-bottom: 35px;
+  margin-top: 90px;
+  > * {
+    width: 330px;
+    height: 50px;
+    .ant-select-selector {
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      background: #0a0a0b !important;
+    }
+    .ant-select-selector,
+    .ant-select-selection-placeholder {
+      color: #fff !important;
+      font-family: "Sui Generis" !important;
+      font-size: 17px !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      line-height: normal;
+    }
+    &.ant-select-open {
+      .ant-select-selector {
+        background: #ffff73 !important;
+      }
+      .ant-select-selector,
+      .ant-select-selection-placeholder {
+        color: #000 !important;
+      }
+    }
+  }
+}
+.portfolio-drop{
+  color: #000;
+font-family: "Sui Generis";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: #FFFF73;
+}
+
+@media screen and (min-width :1470px){
+
+.portfolioList {
+  width: 1410px;
+}
+}
+
+@media screen and (max-width :1470px) and (min-width :1110px){
+  
+.portfolioList {
+  width: 1050px;
+}
+}
+
+
+@media screen and (max-width :1110px) and (min-width:750px){
+  
+.portfolioList {
+  width: 690px;
+}
+}
+
+
+@media screen and (max-width :750px) {
+  
+.portfolioList {
+  width: 330px;
+}
 }

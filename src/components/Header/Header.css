@@ -1,8 +1,9 @@
 .header {
   display: flex;
   width: calc(100% - 100px);
+  max-height: 130px;
   min-width: fit-content;
-  margin: auto;
+  margin: 0;
   align-items: center;
   justify-content: flex-start;
   .logoWrap {

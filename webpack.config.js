@@ -82,6 +82,12 @@ module.exports = {
     }),
     new CopyFilePlugin({
       patterns: [
+          {
+          context: path.resolve(__dirname, "./src/resource/font"),
+          from: path.resolve(__dirname, "./src/resource/font"),
+          to: path.resolve(__dirname, "build/font"),
+                    noErrorOnMissing: true
+        },
         {
           context: path.resolve(__dirname, "./src/resource/images"),
           from: path.resolve(__dirname, "./src/resource/images"),

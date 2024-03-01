@@ -7,6 +7,7 @@
 }
 .caseCard {
     width: 330px;
+        box-sizing: border-box;
     height: 421px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -325,19 +326,3 @@
   }
 }
 
-
-.portfolioList{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    max-width: fit-content;
-    min-width: 100%;
-}
-.portfolioRow{
-  width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}

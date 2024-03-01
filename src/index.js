@@ -4,7 +4,7 @@ import { HashRouter, Route, Routes
  } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Portfolio from "./pages/Porfolio";
-
+import './App.css'
 const container = document.getElementById("root");
 const root = createRoot(container);
 

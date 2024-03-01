@@ -24,21 +24,21 @@ body,
 }
 @font-face {
   font-family: "Sui Generis";
-  src: url(../public/assets/font/sui\ generis\ rg.otf);
+  src: url(/font/sui\ generis\ free.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DungGeunMo";
-  src: url(../public/assets/font/DungGeunMoRegular.woff.ttf);
+  src: url(/font/DungGeunMoRegular.woff.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../public/assets/font/Poppins-Regular.ttf);
+  src: url(/font/Poppins-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
