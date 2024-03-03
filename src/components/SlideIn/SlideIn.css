@@ -1,0 +1,25 @@
+.animation-element {
+  transition: all 200ms linear;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0;
+}
+.slide-container {
+  height: fit-content;
+  width: fit-content;
+}
+.from-left {
+  flex-direction: column;
+}
+.from-right {
+  flex-direction: column;
+}
+.from-bottom {
+  flex-direction: row;
+}
+.in-view {
+  transform: translate(0, 0) !important;
+  opacity: 1;
+}
+
+

@@ -44,7 +44,7 @@ const onClick = (id) => {
         {/* <div className="tab" onClick={()=>onClickTab("#blog")}>Writting press</div> */}
       </div>
       <div className="iconWrap">
-        <div className="iconPart svgContainer" />
+        <div className="rotateMark svgContainer" />
       </div>
     </div>
   );
